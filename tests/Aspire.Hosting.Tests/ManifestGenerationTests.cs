@@ -116,7 +116,7 @@ public class ManifestGenerationTests
 
         Assert.False(
             resources.GetProperty("servicea").TryGetProperty("bindings", out _),
-            "Server has no bindings because they weren't populated from the launch profile.");
+            "Service has no bindings because they weren't populated from the launch profile.");
     }
 
     [Fact]
